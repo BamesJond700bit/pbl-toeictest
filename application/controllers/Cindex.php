@@ -5,6 +5,8 @@
         function tampil(){
             $this->load->view('index');
         }
+
+        
     }
 
 ?>

@@ -74,7 +74,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand font-weight-bold" href="">
-            <img src="<?= base_url('images/toeic.png');?>" width="40" height="40" alt=""> PNBCC X TOEIC
+            <img src="images/toeic.png" width="40" height="40" alt=""> PNBCC X TOEIC
     </a>
         <ul class="navbar-nav font-weight-bold ml-auto">
             <li class="nav-item">
