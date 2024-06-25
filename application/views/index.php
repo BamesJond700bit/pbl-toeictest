@@ -178,12 +178,12 @@
     <!-- Test Sections -->
     <div class="test-section">
         <div class="test-box">
-            <img src="images/niggalistening.jpg" width="400" height="200" alt="Listening Test">
+            <img src="images/malelistening.jpg" width="400" height="200" alt="Listening Test">
             <h2>Listening Test</h2>
             <p>The Listening Test is a component of English language proficiency assessment that evaluates your ability to understand spoken English in various contexts.</p>
         </div>
         <div class="test-box">
-            <img src="images/niggareading.jpg" width="400" height="200" alt="Reading Test">
+            <img src="images/malereading.jpg" width="400" height="200" alt="Reading Test">
             <h2>Reading Test</h2>
             <p>The Reading Test is part of the English language proficiency assessment that measures your ability to read and comprehend written English across a range of texts.</p>
         </div>
