@@ -90,9 +90,9 @@
         <!-- Sidebar -->
         <div class="col-sm-2 bg-light" id="sidebar">
             <ul class="list-group">
-                <a href="<?php echo base_url('cimport/tampilimport')?>" class="list-group-item list-group-item-action bg-light"><i class="fa-solid fa-gauge"></i> Dashboard</a>
+                <a href="" class="list-group-item list-group-item-action bg-light"><i class="fa-solid fa-gauge"></i> Dashboard</a>
                 <a href="" class="list-group-item list-group-item-action bg-light"><i class="fa-solid fa-user"></i> Bank Soal</a>
-                <a href="" class="list-group-item list-group-item-action bg-light"><i class="fa-solid fa-calendar-plus"></i> Data Peserta</a>
+                <a href="<?php echo base_url('cimport/tampilimport')?>" class="list-group-item list-group-item-action bg-light"><i class="fa-solid fa-calendar-plus"></i> Data Peserta</a>
                 <a href="" class="list-group-item list-group-item-action bg-light"><i class="fa-solid fa-calendar-plus"></i> Data Pengerjaan</a>
                 <a href="" class="list-group-item list-group-item-action bg-light"><i class="fa-solid fa-list"></i></i> Data Sertifikat</a>
             </ul>

@@ -16,5 +16,14 @@ class Mimport extends CI_Model {
         // Mengembalikan jumlah baris yang terpengaruh
         return $this->db->affected_rows();
     }
+
+    // Method untuk memeriksa apakah email atau nim sudah ada
+    public function is_duplicate($email, $nim){
+        $this->db->where('email', $email);
+        $this->db->or_where('nim', $nim);
+        $query = $this->db->get('user');
+        return $query->num_rows() > 0;
+    }
 }
+
 ?>
