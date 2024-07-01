@@ -6,7 +6,9 @@
             $this->load->view('index');
         }
 
-        
+        function dashboard(){
+            $this->load->view('admin/vadmin');
+        }
     }
 
 ?>

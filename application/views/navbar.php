@@ -26,7 +26,7 @@
             <a href="page3.html">Institutions</a>
             <a href="page4.html">Contact</a>
         </div>
-        <a href="<?= base_url('chalaman/login'); ?>" class="login btn btn-primary">Login</a>
+        <a href="<?= base_url('cindex/dashboard'); ?>" class="login btn btn-primary">Login</a>
     </div>
 
     <!-- Scrolled Navbar -->
@@ -40,7 +40,7 @@
             <a href="page3.html">Institutions</a>
             <a href="page4.html">Contact</a>
         </div>
-        <a href="<?= base_url('chalaman/login'); ?>" class="login btn btn-primary">Login</a>
+        <a href="<?= base_url('cindex/dashboard'); ?>" class="login btn btn-primary">Login</a>
     </div>
 
     <script>
