@@ -3,202 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PNB X TOEIC</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f5f5f5;
-        }
-
-        /* Header */
-        .header {
-            background-color: #fff;
-            padding: 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: 2px solid #000;
-        }
-        .header a {
-            text-decoration: none;
-            color: #000;
-            margin: 0 10px;
-        }
-        .header .logo {
-            font-weight: bold;
-            font-size: 24px;
-        }
-        .header .contact-info {
-            display: flex;
-            align-items: center;
-        }
-        .header .contact-info div {
-            margin-right: 20px;
-        }
-
-        /* Hero Section */
-        .hero {
-            background-color: #8DC63F;
-            color: white;
-            text-align: center;
-            padding: 50px 20px;
-        }
-        .hero h1 {
-            font-size: 36px;
-            margin-bottom: 10px;
-        }
-        .hero p {
-            font-size: 20px;
-            margin-bottom: 30px;
-        }
-        .hero .cta {
-            padding: 15px 30px;
-            background-color: #000;
-            color: white;
-            text-decoration: none;
-            font-size: 18px;
-            border-radius: 5px;
-        }
-
-        /* Features Section */
-        .features {
-            display: flex;
-            justify-content: center;
-            padding: 40px 20px;
-            background-color: #fff;
-        }
-        .feature {
-            margin: 0 15px;
-            text-align: center;
-        }
-        .feature img {
-            width: 50px;
-            margin-bottom: 10px;
-        }
-        .feature p {
-            font-size: 16px;
-        }
-
-        /* Test Sections */
-        .test-section {
-            display: flex;
-            justify-content: space-around;
-            padding: 40px 20px;
-            background-color: #E9F2E0;
-        }
-        .test-box {
-            width: 45%;
-            padding: 20px;
-            background-color: #FFF;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        .test-box img {
-            width: 100%;
-            height: auto;
-            border-radius: 5px;
-            margin-bottom: 10px;
-        }
-        .test-box h2 {
-            font-size: 22px;
-            margin-bottom: 10px;
-        }
-        .test-box p {
-            font-size: 16px;
-        }
-
-        /* Call to Action Section */
-        .cta-section {
-            background-color: #355E3B;
-            color: white;
-            text-align: center;
-            padding: 30px 20px;
-        }
-        .cta-section p {
-            font-size: 18px;
-            margin-bottom: 20px;
-        }
-        .cta-section .cta-button {
-            padding: 15px 30px;
-            background-color: #FDD835;
-            color: #000;
-            text-decoration: none;
-            font-size: 18px;
-            border-radius: 5px;
-        }
-
-        /* Footer */
-        .footer {
-            background-color: #222;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="<?= base_url('application/views/css/home.css'); ?>">
+    <link rel="icon" href="<?= base_url('images/logo.png'); ?>" type="image/png">
+    <title>PNB TOEIC Center</title>
 </head>
 <body>
-
     <!-- Header -->
-    <div class="header">
-        <div class="logo">PNB X TOEIC</div>
-        <div class="contact-info">
-            <div>Work Hour: Mon-Fri, 9am-5pm</div>
-            <div>Email: info@example.com</div>
-            <div>Phone: +1 234 567 890</div>
-        </div>
-        <a href="" class="login">Login</a>
-    </div>
+    <?php include 'navbar.php'; ?>
 
     <!-- Hero Section -->
-    <div class="hero">
-        <h1>Certify your English proficiency today!</h1>
-        <p>Start your journey to a whole new world.</p>
-        <p>► Fast Result<br>► Quick Setup<br>► Adaptive Test</p>
-        <a href="#" class="cta">TEST NOW!</a>
+    <div class="header-home">
+        <div class="text-content">
+            <h1>Empower Your Future with TOEIC  !</h1>
+            <h5>Unlock Your Potential with English Proficiency with TOEIC Computer Based Test, On-Site at Politeknik Negeri Bali.</h5>
+            <p><i class="fa-solid fa-circle-check custom-icon"></i> TOEIC Official & Accurate Tests
+                <br><i class="fa-solid fa-circle-check custom-icon"></i> Comfortable Test Environment
+                <br><i class="fa-solid fa-circle-check custom-icon"></i> Flexible Scheduling</p>
+            <a href="#" class="test-button">TEST NOW!</a>
+        </div>
+        <div class="image-content">
+            <img src="images/model1.png" alt="TOEIC Test">
+        </div>
     </div>
 
     <!-- Features Section -->
     <div class="features">
         <div class="feature">
-            <img src="images/globe.png" width="50" height="50" alt="Global Recognition">
-            <p>Global Recognition</p>
+            <i class="fa-solid fa-earth-asia custom2"></i>
+            <h1>Global Recognition</h1>
+            <p>Recognized and valued by organizations, educational institutions, and professionals around the world.</p>
         </div>
         <div class="feature">
-            <img src="images/globe.png" width="50" height="50" alt="Standardized Testing">
-            <p>Standardized Testing</p>
+            <i class="fa-solid fa-hand-holding-dollar custom2"></i>
+            <h1>Cheapest English Test   </h1>
+            <p>TOEIC ensures that more people can access a reputable English proficiency test without breaking the bank.</p>
         </div>
         <div class="feature">
-            <img src="images/globe.png" width="50" height="50" alt="Accreditation and Certification">
-            <p>Accreditation and Certification</p>
+            <i class="fa-solid fa-graduation-cap custom2"></i>
+            <h1>Academic Excellence</h1>
+            <p>Access the best educational resources, become an Awardee and succeed in global academic environments.</p>
         </div>
     </div>
 
-    <!-- Test Sections -->
+    <!-- About Test Sections -->
     <div class="test-section">
-        <div class="test-box">
-            <img src="images/malelistening.jpg" width="400" height="200" alt="Listening Test">
-            <h2>Listening Test</h2>
-            <p>The Listening Test is a component of English language proficiency assessment that evaluates your ability to understand spoken English in various contexts.</p>
+        <h1>About Test</h1>
+        <div class="test-box-container">
+            <div class="test-box">
+                <img src="images/listening.jpg" alt="Listening Test">
+                <h2>Listening Test</h2>
+                <p>The Listening Test is a component of English language proficiency assessment that evaluates your ability to understand spoken English in various contexts.</p>
+            </div>
+            <div class="test-box">
+                <img src="images/reading.jpg" alt="Reading Test">
+                <h2>Reading Test</h2>
+                <p>The Reading Test is part of the English language proficiency assessment that measures your ability to read and comprehend across a range of texts.</p>
+            </div>
         </div>
-        <div class="test-box">
-            <img src="images/malereading.jpg" width="400" height="200" alt="Reading Test">
-            <h2>Reading Test</h2>
-            <p>The Reading Test is part of the English language proficiency assessment that measures your ability to read and comprehend written English across a range of texts.</p>
-        </div>
+        <a href="#" class="learn-more-button">Learn More</a>
     </div>
 
     <!-- Call to Action Section -->
     <div class="cta-section">
-        <p>Ready to start your English proficiency journey? Join us and take the test today.</p>
-        <a href="#" class="cta-button">TES SEKARANG</a>
+        <h1>Test Environment</h1>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="images/c1.jpg" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="images/c2.jpg" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="images/c3.jpg" alt="Third slide">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <p>Ready to start your English proficiency journey? Let's go.. schedule your test!</p>
+        <a href="#" class="cta-button">TEST NOW!</a>
+    </div>
+
+    <!-- FAQ Section -->
+    <div class="FAQ-section">
+        <h1>Frequently Asked Questions</h1>
+        <div class="faq-container">
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Where this TOEIC test center located? 
+                            <i class="fa-solid fa-chevron-down icon-toggle"></i>
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>di pnb jimbaran cuy</strong> deket bjir. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse cursus convallis elementum. Morbi molestie neque libero, ac accumsan sem imperdiet vitae.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            How do I register for the TOEIC test?
+                            <i class="fa-solid fa-chevron-down icon-toggle"></i>
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>To register for the TOEIC test,</strong> visit the official TOEIC website or the ETS website. You can search for available test dates and locations. Registration can often be completed online through these sites. Some test centers may also allow in-person registration. Be sure to check the specific registration process for your chosen test center, including deadlines and fees.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            What should I do if I need to reschedule or cancel my TOEIC test?
+                            <i class="fa-solid fa-chevron-down icon-toggle"></i>
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>If you need to reschedule or cancel your TOEIC test</strong>, contact the test center where you registered as soon as possible. The official TOEIC website or the test center should provide detailed information about their rescheduling and cancellation policies. Keep in mind that there may be deadlines and fees associated with rescheduling or canceling your test.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- Footer -->
-    <div class="footer">
-        &copy; 2024 PNB X TOEIC. All rights reserved.
-    </div>
-
+    <?php include 'footer.php'; ?>
+</body>
 </body>
 </html>
