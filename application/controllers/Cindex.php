@@ -9,6 +9,10 @@
         function dashboard(){
             $this->load->view('admin/vadmin');
         }
+
+        function dashboardUser(){
+            $this->load->view('dashUser/vuser');
+        }
     }
 
 ?>

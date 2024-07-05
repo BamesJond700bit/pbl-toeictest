@@ -67,14 +67,14 @@
             color: #fff;
         }
     </style>
-    <title>Admin Dashboard</title>
+    <title>User Dashboard</title>
 </head>
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand font-weight-bold" href="<?php echo base_url('cdashboard/tampildata'); ?>">
-            <img src="<?= base_url('images/logo_home.png');?>" width="270px" height="50px" alt=""> [<?= strtoupper($this->session->userdata('role')); ?>]
+            <img src="<?= base_url('images/logo_home.png');?>" width="270px" height="50px" alt=""> 
         </a>
         <ul class="navbar-nav font-weight-bold ml-auto">
             <li class="nav-item">
@@ -97,11 +97,12 @@
         <!-- Sidebar -->
         <div class="col-sm-2 bg-light" id="sidebar">
             <ul class="list-group">
-                <a href="" class="list-group-item list-group-item-action bg-light"><i class="fa-solid fa-gauge"></i> Dashboard</a>
-                <a href="" class="list-group-item list-group-item-action bg-light"><i class="fa-solid fa-user"></i> Bank Soal</a>
-                <a href="<?php echo base_url('cimport/tampilimport')?>" class="list-group-item list-group-item-action bg-light"><i class="fa-solid fa-calendar-plus"></i> Data Peserta</a>
-                <a href="" class="list-group-item list-group-item-action bg-light"><i class="fa-solid fa-calendar-plus"></i> Data Pengerjaan</a>
-                <a href="" class="list-group-item list-group-item-action bg-light"><i class="fa-solid fa-list"></i></i> Data Sertifikat</a>
+                <a href="" class="list-group-item list-group-item-action bg-light"><i class="fa-solid fa-gauge"></i> My Test</a>
+                <a href="" class="list-group-item list-group-item-action bg-light"><i class="fa-solid fa-user"></i> About Test</a>
+                <a href="<?php echo base_url('cimport/tampilimport')?>" class="list-group-item list-group-item-action bg-light"><i class="fa-solid fa-calendar-plus"></i> Institutions</a>
+            </ul>
+            <ul class="list-group">
+                <a href="" class="list-group-item list-group-item-action bg-light"><i class="fa-solid fa-gauge"></i> My Account</a>
             </ul>
         </div>
         <!-- Main Content -->
