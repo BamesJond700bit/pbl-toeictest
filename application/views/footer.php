@@ -15,7 +15,7 @@
                     <p><i class="fas fa-envelope"></i> poltek@pnb.ac.id</p>
                 </div>
                 <div class="img-center">
-                    <img src="images/toeic_auth.png" alt="Logo" class="img-fluid">
+                    <img src="<?= base_url('images/toeic_auth.png'); ?>" alt="Logo" class="img-fluid">
                 </div>
                 <div class="external-link">
                     <h3>External Link</h3>

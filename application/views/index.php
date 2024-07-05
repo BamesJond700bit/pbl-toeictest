@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="<?= base_url('application/views/css/home.css'); ?>">
+    <link rel="stylesheet" type="text/css" href="<?= base_url('application/views/css/navbar.css'); ?>">
     <link rel="icon" href="<?= base_url('images/logo.png'); ?>" type="image/png">
     <title>PNB TOEIC Center</title>
 </head>
@@ -15,14 +16,14 @@
     <div class="header-home">
         <div class="text-content">
             <h1>Empower Your Future with TOEIC  !</h1>
-            <h5>Unlock Your Potential with English Proficiency with TOEIC Computer Based Test, On-Site at Politeknik Negeri Bali.</h5>
+            <h5>Unlock Your Potential with TOEIC English Proficiency Computer Based Test, On-Site at Politeknik Negeri Bali.</h5>
             <p><i class="fa-solid fa-circle-check custom-icon"></i> TOEIC Official & Accurate Tests
                 <br><i class="fa-solid fa-circle-check custom-icon"></i> Comfortable Test Environment
                 <br><i class="fa-solid fa-circle-check custom-icon"></i> Flexible Scheduling</p>
             <a href="#" class="test-button">TEST NOW!</a>
         </div>
         <div class="image-content">
-            <img src="images/model1.png" alt="TOEIC Test">
+            <img src="<?= base_url('images/model1.png'); ?>" alt="TOEIC Test">
         </div>
     </div>
 
@@ -50,12 +51,12 @@
         <h1>About Test</h1>
         <div class="test-box-container">
             <div class="test-box">
-                <img src="images/listening.jpg" alt="Listening Test">
+                <img src="<?= base_url('images/listening.jpg'); ?>" alt="Listening Test">
                 <h2>Listening Test</h2>
                 <p>The Listening Test is a component of English language proficiency assessment that evaluates your ability to understand spoken English in various contexts.</p>
             </div>
             <div class="test-box">
-                <img src="images/reading.jpg" alt="Reading Test">
+                <img src="<?= base_url('images/reading.jpg'); ?>" alt="Reading Test">
                 <h2>Reading Test</h2>
                 <p>The Reading Test is part of the English language proficiency assessment that measures your ability to read and comprehend across a range of texts.</p>
             </div>
@@ -74,13 +75,13 @@
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="d-block w-100" src="images/c1.jpg" alt="First slide">
+                    <img class="d-block w-100" src="<?= base_url('images/c1.jpg'); ?>" alt="First slide">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="images/c2.jpg" alt="Second slide">
+                    <img class="d-block w-100" src="<?= base_url('images/c2.jpg'); ?>" alt="Second slide">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="images/c3.jpg" alt="Third slide">
+                    <img class="d-block w-100" src="<?= base_url('images/c3.jpg'); ?>" alt="Third slide">
                 </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">

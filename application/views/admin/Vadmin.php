@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    
-    
+    <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.7/js/dataTables.bootstrap4.min.js"></script>
+    <link rel="icon" href="<?= base_url('images/logo.png'); ?>" type="image/png">
+    <title>[Admin] PNB TOEIC Center</title>
     <style>
         body,html {
-            background-color: #9EB384;
+            background-color: #AACF7D;
             height: 100%;
             margin: 0;
             padding: 0;
@@ -57,7 +58,7 @@
         }
         
         .custom-btn {
-        background-color: #004789;
+        background-color: #355E3B;
         color: #fff;
         }
 
@@ -66,8 +67,12 @@
             background-color: #0066a2;
             color: #fff;
         }
+
+        .dropdown-menu-right.show {
+            right: 0;
+            left: auto;
+        }
     </style>
-    <title>Admin Dashboard</title>
 </head>
 
 <body>
@@ -97,15 +102,33 @@
         <!-- Sidebar -->
         <div class="col-sm-2 bg-light" id="sidebar">
             <ul class="list-group">
-                <a href="" class="list-group-item list-group-item-action bg-light"><i class="fa-solid fa-gauge"></i> Dashboard</a>
-                <a href="" class="list-group-item list-group-item-action bg-light"><i class="fa-solid fa-user"></i> Bank Soal</a>
-                <a href="<?php echo base_url('cimport/tampilimport')?>" class="list-group-item list-group-item-action bg-light"><i class="fa-solid fa-calendar-plus"></i> Data Peserta</a>
-                <a href="" class="list-group-item list-group-item-action bg-light"><i class="fa-solid fa-calendar-plus"></i> Data Pengerjaan</a>
-                <a href="" class="list-group-item list-group-item-action bg-light"><i class="fa-solid fa-list"></i></i> Data Sertifikat</a>
+                <a href="<?php echo base_url('cdashboard/tampildata'); ?>" class="list-group-item list-group-item-action bg-light"><i class="fa-solid fa-gauge"></i> Dashboard</a>
+                <a href="<?php echo base_url('cdaftar/tampilakun'); ?>" class="list-group-item list-group-item-action bg-light"><i class="fa-solid fa-user"></i> Data Akun</a>
+                <a href="<?php echo base_url('cevent/tampilevent'); ?>" class="list-group-item list-group-item-action bg-light"><i class="fa-solid fa-calendar-plus"></i> Data Event</a>
+                <a href="<?php echo base_url('ckarosel/tampilkarosel'); ?>" class="list-group-item list-group-item-action bg-light"><i class="fa-solid fa-image"></i> Data Karosel</a>
+                <a href="<?php echo base_url('ckategori/tampilkategori'); ?>" class="list-group-item list-group-item-action bg-light"><i class="fa-solid fa-list"></i></i> Data Kategori</a>
             </ul>
         </div>
         <!-- Main Content -->
-        
+        <div class="col-sm-10">
+            <div class="container mt-3">
+                <?php
+                if (empty($konten)) {
+                    echo "";
+                } else {
+                    echo $konten;
+                }
+                ?>
+
+                <?php
+                if (empty($table)) {
+                    echo "";
+                } else {
+                    echo "$table";
+                }
+                ?>
+            </div>
+        </div>
     </div>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

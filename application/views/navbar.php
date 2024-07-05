@@ -12,7 +12,9 @@
 <body>
     <div class="header container-fluid">
         <div class="logo">
-            <img id="main-logo" src="images/logo_home.png" data-alt-src="images/logo.png" class="d-inline-block align-top" alt="">
+            <a href="<?= base_url('chalaman/index'); ?>">
+                <img id="main-logo" src="<?= base_url('images/logo_home.png'); ?>" data-alt-src="<?= base_url('images/logo.png'); ?>" class="d-inline-block align-top" alt="">
+            </a>
         </div>
         <div class="contact-info">
             <div><i class="fa-solid fa-chalkboard-user custom1"></i> Work Hour: Mon-Fri, 7am-3pm</div>
@@ -21,26 +23,28 @@
     </div>
     <div class="header-under container-fluid">
         <div class="nav-links">
-            <a href="page1.html">Home</a>
-            <a href="page2.html">About TOEIC</a>
+            <a href="<?= base_url('chalaman/index'); ?>">Home</a>
+            <a href="page2.html">Test Info</a>
             <a href="page3.html">Institutions</a>
             <a href="page4.html">Contact</a>
         </div>
-        <a href="<?= base_url('cindex/dashboard'); ?>" class="login btn btn-primary">Login</a>
+        <a href="<?= base_url('chalaman/login'); ?>" class="login btn btn-primary">Login</a>
     </div>
 
     <!-- Scrolled Navbar -->
     <div class="header-scrolled container-fluid">
         <div class="logo">
-            <img id="main-logo" src="images/logo_scroll.png" data-alt-src="images/logo.png" class="d-inline-block align-top" alt="">
+            <a href="<?= base_url('chalaman/index'); ?>">
+                <img id="main-logo" src="<?= base_url('images/logo_scroll.png'); ?>" data-alt-src="<?= base_url('images/logo.png'); ?>" class="d-inline-block align-top" alt="">
+            </a>
         </div>
         <div class="nav-links">
-            <a href="page1.html">Home</a>
-            <a href="page2.html">About TOEIC</a>
+            <a href="<?= base_url('chalaman/index'); ?>">Home</a>
+            <a href="page2.html">Test Info</a>
             <a href="page3.html">Institutions</a>
             <a href="page4.html">Contact</a>
         </div>
-        <a href="<?= base_url('cindex/dashboard'); ?>" class="login btn btn-primary">Login</a>
+        <a href="<?= base_url('chalaman/login'); ?>" class="login btn btn-primary">Login</a>
     </div>
 
     <script>
