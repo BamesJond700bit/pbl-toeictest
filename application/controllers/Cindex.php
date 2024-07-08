@@ -12,6 +12,11 @@
 
         function dashboardUser(){
             $this->load->view('dashUser/vuser');
+        
+       
+        }
+        function mytest(){
+            $this->load->view('dashUser/vmytest');
         }
     }
 
